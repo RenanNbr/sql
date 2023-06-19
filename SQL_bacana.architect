@@ -193,10 +193,13 @@
   <table id="TAB51" populated="true" UUID="cf74d5c5-1aeb-47b2-b0d6-c44a07abbe7d" name="PESSOA_FISICA" objectType="TABLE" physicalName="Tb_PESSOA_FISICA" >
    <remarks></remarks>
    <folder id="FOLTAB511" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL52" populated="true" UUID="809d19f9-eb11-4117-897e-62c1d2f3e379" autoIncrement="false" autoIncrementSequenceName="Tb_PESSOA_FISICA_cpf_seq" defaultValue="" name="cpf" nullable="0" physicalName="cpf" precision="15" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL52" populated="true" UUID="113e8220-1baf-4f99-b1ee-f6b5569a49e4" autoIncrement="false" autoIncrementSequenceName="Tb_CLIENTE_cod_cliente_seq" defaultValue="" name="cod_cliente" nullable="0" physicalName="cod_cliente" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL53" populated="true" UUID="3a645943-e8a1-4c5c-b321-6ef8bb6f4e40" autoIncrement="false" autoIncrementSequenceName="Tb_PESSOA_FISICA_rg_seq" defaultValue="" name="rg" nullable="0" physicalName="rg" precision="15" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL53" populated="true" UUID="809d19f9-eb11-4117-897e-62c1d2f3e379" autoIncrement="false" autoIncrementSequenceName="Tb_PESSOA_FISICA_cpf_seq" defaultValue="" name="cpf" nullable="0" physicalName="cpf" precision="15" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL54" populated="true" UUID="3a645943-e8a1-4c5c-b321-6ef8bb6f4e40" autoIncrement="false" autoIncrementSequenceName="Tb_PESSOA_FISICA_rg_seq" defaultValue="" name="rg" nullable="0" physicalName="rg" precision="15" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     </folder>
@@ -205,44 +208,55 @@
     <folder id="FOLTAB512" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB514" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX54" populated="true" UUID="c49a77c8-9f56-461b-b6ff-9603e3fdd222" clustered="false" name="Tb_PESSOA_FISICA_pk" physicalName="Tb_PESSOA_FISICA_pk" primaryKeyIndex="true" unique="false" >
+    <index id="IDX55" populated="true" UUID="c49a77c8-9f56-461b-b6ff-9603e3fdd222" clustered="false" name="Tb_PESSOA_FISICA_pk" physicalName="Tb_PESSOA_FISICA_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC56" populated="true" UUID="d57acc62-9463-49fd-8405-17d10083f71e" ascendingOrDescending="UNSPECIFIED" column-ref="COL52" name="cod_cliente" physicalName="cod_cliente" />
     </index>
    </folder>
   </table>
-  <table id="TAB55" populated="true" UUID="bd7df893-23c4-4f1f-857d-4e90b293e126" name="PESSOA_JURIDICA" objectType="TABLE" physicalName="Tb_PESSOA_JURIDICA" >
+  <table id="TAB57" populated="true" UUID="bd7df893-23c4-4f1f-857d-4e90b293e126" name="PESSOA_JURIDICA" objectType="TABLE" physicalName="Tb_PESSOA_JURIDICA" >
    <remarks></remarks>
-   <folder id="FOLTAB551" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL56" populated="true" UUID="ede00209-1d8a-42fc-b647-037f3b91b41b" autoIncrement="false" autoIncrementSequenceName="Tb_PESSOA_JURIDICA_cnpj_seq" defaultValue="" name="cnpj" nullable="0" physicalName="cnpj" precision="20" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+   <folder id="FOLTAB571" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL58" populated="true" UUID="522124b0-0ba6-4d35-a74e-5d3874f69a90" autoIncrement="false" autoIncrementSequenceName="Tb_CLIENTE_cod_cliente_seq" defaultValue="" name="cod_cliente" nullable="0" physicalName="cod_cliente" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL57" populated="true" UUID="50803d40-6189-4ea7-8156-6e1317a3b08d" autoIncrement="false" autoIncrementSequenceName="Tb_PESSOA_JURIDICA_ie_seq" defaultValue="" name="ie" nullable="0" physicalName="ie" precision="25" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL59" populated="true" UUID="ede00209-1d8a-42fc-b647-037f3b91b41b" autoIncrement="false" autoIncrementSequenceName="Tb_PESSOA_JURIDICA_cnpj_seq" defaultValue="" name="cnpj" nullable="0" physicalName="cnpj" precision="20" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL60" populated="true" UUID="50803d40-6189-4ea7-8156-6e1317a3b08d" autoIncrement="false" autoIncrementSequenceName="Tb_PESSOA_JURIDICA_ie_seq" defaultValue="" name="ie" nullable="0" physicalName="ie" precision="25" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     </folder>
-    <folder id="FOLTAB553" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    <folder id="FOLTAB573" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
     </folder>
-    <folder id="FOLTAB552" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    <folder id="FOLTAB572" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
-    <folder id="FOLTAB554" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX58" populated="true" UUID="f62c9c34-f46d-4906-861a-7b44153f3c93" clustered="false" name="Tb_PESSOA_JURIDICA_pk" physicalName="Tb_PESSOA_JURIDICA_pk" primaryKeyIndex="true" unique="false" >
+    <folder id="FOLTAB574" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX61" populated="true" UUID="f62c9c34-f46d-4906-861a-7b44153f3c93" clustered="false" name="Tb_PESSOA_JURIDICA_pk" physicalName="Tb_PESSOA_JURIDICA_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC62" populated="true" UUID="00c341b0-c377-48f2-af54-8adc46c98922" ascendingOrDescending="UNSPECIFIED" column-ref="COL58" name="cod_cliente" physicalName="cod_cliente" />
     </index>
    </folder>
   </table>
   <relationships>
-   <relationship id="REL59" populated="true" UUID="757420bd-db30-4d45-ba4d-bfd5860a3d55" deferrability="7" deleteRule="3" fk-table-ref="TAB32" fkCardinality="7" identifying="false" name="Tb_CLIENTE_Tb_PEDIDO_fk" physicalName="Tb_CLIENTE_Tb_PEDIDO_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP60" populated="true" UUID="e0a107f4-c81e-4074-9924-99cb6ab53c4c" fk-column-ref="COL34" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   <relationship id="REL63" populated="true" UUID="757420bd-db30-4d45-ba4d-bfd5860a3d55" deferrability="7" deleteRule="3" fk-table-ref="TAB32" fkCardinality="7" identifying="false" name="Tb_CLIENTE_Tb_PEDIDO_fk" physicalName="Tb_CLIENTE_Tb_PEDIDO_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP64" populated="true" UUID="e0a107f4-c81e-4074-9924-99cb6ab53c4c" fk-column-ref="COL34" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
    </relationship>
-   <relationship id="REL61" populated="true" UUID="fa7bf224-f5be-48a6-a227-5ed1f1b7349e" deferrability="7" deleteRule="3" fk-table-ref="TAB21" fkCardinality="7" identifying="false" name="Tb_editora_Tb_LIVRO_fk" physicalName="Tb_editora_Tb_LIVRO_fk" pk-table-ref="TAB13" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP62" populated="true" UUID="97d22023-fa32-4a64-b525-369bcd6f6a27" fk-column-ref="COL23" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL14" />
+   <relationship id="REL65" populated="true" UUID="02e7f1d5-1987-4c8a-b329-1b464dbc8c7b" deferrability="7" deleteRule="3" fk-table-ref="TAB51" fkCardinality="3" identifying="true" name="Tb_CLIENTE_Tb_PESSOA_FISICA_fk" physicalName="Tb_CLIENTE_Tb_PESSOA_FISICA_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP66" populated="true" UUID="f12b1546-74ec-43b5-ae7f-30011d74c120" fk-column-ref="COL52" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
    </relationship>
-   <relationship id="REL63" populated="true" UUID="fec0e344-c762-4020-b2ee-f38d215f38ed" deferrability="7" deleteRule="3" fk-table-ref="TAB39" fkCardinality="7" identifying="true" name="Tb_LIVRO_Tb_ITEM_PEDIDO_fk" physicalName="Tb_LIVRO_Tb_ITEM_PEDIDO_fk" pk-table-ref="TAB21" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP64" populated="true" UUID="2afe0b94-8648-45a6-9602-0e6fda5b54f4" fk-column-ref="COL41" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL22" />
+   <relationship id="REL67" populated="true" UUID="5f37ff6a-dfaa-4f8e-8761-9e57ff4b43ab" deferrability="7" deleteRule="3" fk-table-ref="TAB57" fkCardinality="3" identifying="true" name="Tb_CLIENTE_Tb_PESSOA_JURIDICA_fk" physicalName="Tb_CLIENTE_Tb_PESSOA_JURIDICA_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP68" populated="true" UUID="3085adb0-77c0-4889-b407-f664ae9f4f1f" fk-column-ref="COL58" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
    </relationship>
-   <relationship id="REL65" populated="true" UUID="ebfff1bf-30b9-4953-bc32-37df7fcf2037" deferrability="7" deleteRule="3" fk-table-ref="TAB47" fkCardinality="7" identifying="false" name="Tb_LIVRO_Tb_ESTOQUE_fk" physicalName="Tb_LIVRO_Tb_ESTOQUE_fk" pk-table-ref="TAB21" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP66" populated="true" UUID="9c3c2ea4-bab5-460a-824a-dc440d80c215" fk-column-ref="COL49" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL22" />
+   <relationship id="REL69" populated="true" UUID="fa7bf224-f5be-48a6-a227-5ed1f1b7349e" deferrability="7" deleteRule="3" fk-table-ref="TAB21" fkCardinality="7" identifying="false" name="Tb_editora_Tb_LIVRO_fk" physicalName="Tb_editora_Tb_LIVRO_fk" pk-table-ref="TAB13" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP70" populated="true" UUID="97d22023-fa32-4a64-b525-369bcd6f6a27" fk-column-ref="COL23" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL14" />
    </relationship>
-   <relationship id="REL67" populated="true" UUID="f8e4a024-1050-4aa0-bb56-6eadbb1453d2" deferrability="7" deleteRule="3" fk-table-ref="TAB39" fkCardinality="7" identifying="true" name="Tb_PEDIDO_Tb_ITEM_PEDIDO_fk" physicalName="Tb_PEDIDO_Tb_ITEM_PEDIDO_fk" pk-table-ref="TAB32" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP68" populated="true" UUID="f2ee3966-0865-46ee-a605-15cb6cc2c521" fk-column-ref="COL40" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL33" />
+   <relationship id="REL71" populated="true" UUID="fec0e344-c762-4020-b2ee-f38d215f38ed" deferrability="7" deleteRule="3" fk-table-ref="TAB39" fkCardinality="6" identifying="true" name="Tb_LIVRO_Tb_ITEM_PEDIDO_fk" physicalName="Tb_LIVRO_Tb_ITEM_PEDIDO_fk" pk-table-ref="TAB21" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP72" populated="true" UUID="3a2153e1-0cf7-452a-a285-da3b86d56e6e" fk-column-ref="COL41" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL22" />
+   </relationship>
+   <relationship id="REL73" populated="true" UUID="ebfff1bf-30b9-4953-bc32-37df7fcf2037" deferrability="7" deleteRule="3" fk-table-ref="TAB47" fkCardinality="3" identifying="false" name="Tb_LIVRO_Tb_ESTOQUE_fk" physicalName="Tb_LIVRO_Tb_ESTOQUE_fk" pk-table-ref="TAB21" pkCardinality="6" updateRule="3" >
+    <column-mapping id="CMP74" populated="true" UUID="db7f7264-6c3e-4d29-b1c9-fd909abd9a70" fk-column-ref="COL49" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL22" />
+   </relationship>
+   <relationship id="REL75" populated="true" UUID="f8e4a024-1050-4aa0-bb56-6eadbb1453d2" deferrability="7" deleteRule="3" fk-table-ref="TAB39" fkCardinality="6" identifying="true" name="Tb_PEDIDO_Tb_ITEM_PEDIDO_fk" physicalName="Tb_PEDIDO_Tb_ITEM_PEDIDO_fk" pk-table-ref="TAB32" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP76" populated="true" UUID="108212df-9506-4df4-a083-62452a8f8e4b" fk-column-ref="COL40" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL33" />
    </relationship>
   </relationships>
  </target-database>
@@ -250,19 +264,21 @@
  <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
  <play-pen zoom="0.9999999999999996" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
-  <table-pane table-ref="TAB1" x="41" y="27" bgColor="0xc8b7ea" fgColor="0x5229a3" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB13" x="1028" y="127" bgColor="0xbfd6ff" fgColor="0x5a6986" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB21" x="644" y="20" bgColor="0xf6bcbc" fgColor="0xcc0000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB32" x="527" y="281" bgColor="0xfbdabb" fgColor="0xec7000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB39" x="317" y="29" bgColor="0xe8cfdb" fgColor="0x854f61" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB47" x="1029" y="54" bgColor="0xbfd6ff" fgColor="0x206cff" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB51" x="42" y="300" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB55" x="257" y="301" bgColor="0xc8dccc" fgColor="0x64992c" rounded="false" dashed="false"/>
-  <table-link relationship-ref="REL59" pkConnection="0.9206349206349206" fkConnection="0.03557312252964427" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="132"/>
-  <table-link relationship-ref="REL67" pkConnection="0.31620553359683795" fkConnection="0.3076923076923077" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="72"/>
-  <table-link relationship-ref="REL63" pkConnection="0.45925925925925926" fkConnection="0.5555555555555556" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="18"/>
-  <table-link relationship-ref="REL61" pkConnection="0.22857142857142856" fkConnection="0.68" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="18"/>
-  <table-link relationship-ref="REL65" pkConnection="0.47333333333333333" fkConnection="0.55" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-pane table-ref="TAB1" x="59" y="39" bgColor="0xc8b7ea" fgColor="0x5229a3" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB13" x="1085" y="135" bgColor="0xbfd6ff" fgColor="0x5a6986" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB21" x="748" y="57" bgColor="0xf6bcbc" fgColor="0xcc0000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB32" x="598" y="276" bgColor="0xfbdabb" fgColor="0xec7000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB39" x="374" y="37" bgColor="0xe8cfdb" fgColor="0x854f61" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB47" x="1117" y="45" bgColor="0xbfd6ff" fgColor="0x206cff" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB51" x="20" y="350" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB57" x="298" y="358" bgColor="0xc8dccc" fgColor="0x64992c" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL63" pkConnection="0.6787878787878788" fkConnection="0.16666666666666666" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL75" pkConnection="0.07905138339920949" fkConnection="0.9076923076923077" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL71" pkConnection="0.45925925925925926" fkConnection="0.5555555555555556" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL69" pkConnection="0.22857142857142856" fkConnection="0.68" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL73" pkConnection="0.47333333333333333" fkConnection="0.55" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL65" pkConnection="0.44047619047619047" fkConnection="0.5212355212355212" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL67" pkConnection="0.7896825396825397" fkConnection="0.37065637065637064" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="132"/>
  </play-pen>
  <critic-manager>
   <critic-grouping platformType="Generic" enabled="true">
